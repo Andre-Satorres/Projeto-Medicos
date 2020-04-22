@@ -1,0 +1,391 @@
+﻿@font-face {
+    font-family: Poppins-Bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Bold;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+section {
+    height: 100vh;
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: #000;
+    font-family: Poppins-Regular;
+}
+
+nav li {
+    display: inline-block;
+    padding: 24px 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+nav li a {
+    color: #fff;
+}
+
+nav li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+nav li a:hover::after {
+    width: 100%;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    z-index: 1;
+}
+
+.paginaInicial {
+    background: url("../imagens/logo.png") 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.paginaInicial .titulo {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 10px;
+    color: #008080;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Poppins-Bold;
+    display: block;
+}
+
+.tituloDivCima {
+    display: inline-block;
+    height: 5px;
+    width: 0;
+    background-color: #00cc99;
+    position: absolute;
+    margin-left: 468px;
+    margin-top: 303px;
+    animation: bordaCima 5s infinite alternate;
+}
+
+.tituloDivBaixo {
+    display: inline-block;
+    height: 5px;
+    width: 0;
+    background-color: #00cc99;
+    position: absolute;
+    margin-left: 468px;
+    margin-top: 369px;
+    animation: bordaBaixo 5s infinite alternate;
+}
+
+.tituloDivEsquerdo {
+    display: inline-block;
+    height: 0;
+    width: 5px;
+    background-color: #00cc99;
+    position: absolute;
+    margin-left: 468px;
+    margin-top: 374px;
+    animation: bordaEsquerda 5s infinite alternate;
+}
+
+.tituloDivDireito {
+    display: inline-block;
+    height: 0;
+    width: 5px;
+    background-color: #00cc99;
+    position: absolute;
+    margin-left: 1098px;
+    margin-top: 303px;
+    animation: bordaDireita 5s infinite alternate;
+}
+
+@keyframes bordaCima {
+    0% {
+        width: 0;
+    }
+    
+    100% {
+        width: 635px;
+    }
+}
+
+@keyframes bordaBaixo {
+    0% {
+        right: 480px;
+        transform-origin: 100% 50%;
+        width: 0;
+    }
+
+    100% {
+        width: 635px;
+        right: 480px;
+        transform-origin: 100% 50%;
+    }
+}
+
+@keyframes bordaDireita {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 71px;
+    }
+}
+
+@keyframes bordaEsquerda {
+    0% {
+        transform: rotateX(180deg);
+        transform-origin: top;
+        height: 0;
+    }
+
+    100% {
+        height: 71px;
+        transform: rotateX(180deg);
+        transform-origin: top;
+    }
+}
+
+.paginaInicial h2 {
+    position: absolute;
+    top: 89%;
+    left: 0.5%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-family: Poppins-Regular;
+}
+
+.home {
+    margin-top: -15px;
+}
+
+.login {
+    margin-top: -15px;
+}
+
+.cadastro {
+    margin-top: -15px;
+}
+
+.home img {
+    position: absolute;
+    margin-top: -7px;
+}
+
+.login img {
+    position: absolute;
+    margin-top: -7px;
+}
+
+.cadastro img {
+    position: absolute;
+    margin-top: -7px;
+}
+
+#comeco {
+    position: absolute;
+    margin-left: 25%;
+}
+
+#doacao {
+    position: absolute;
+    margin-left: 75%;
+}
+
+#info {
+    position: absolute;
+    margin-left: 25%;
+    margin-top:20%;
+}
+
+#local {
+    position: absolute;
+    margin-left:75%;
+    margin-top: 20%;
+}
+
+.contexto .InicialEsquerda {
+    position: absolute;
+    margin-left: 12%;
+    margin-top: 3%;
+}
+
+.contexto .InicialDireita {
+    position: absolute;
+    margin-left: 61%;
+    margin-top: 3%;
+}
+
+.contexto .FinalEsquerda1 {
+    position: absolute;
+    margin-top: 24%;
+    margin-left: 12%;
+}
+
+.contexto .FinalEsquerda2 {
+    position: absolute;
+    margin-top: 26%;
+    margin-left: 12%;
+}
+
+.contexto .FinalDireita1 {
+    position: absolute;
+    margin-top: 24%;
+    margin-left: 61%;
+}
+
+.contexto .FinalDireita2 {
+    position: absolute;
+    margin-top: 26%;
+    margin-left: 61%;
+}
+
+#staff {
+    width: 320px;
+    height: 180px;
+    position: absolute;
+    margin-left: 16%;
+    margin-top: 30%;
+    background: url(../imagens/staff.jpg) 50% 50% no-repeat;
+}
+
+#map {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 28%;
+}
+
+.contexto p {
+    width: 80%;
+    margin: 40px auto;
+    color: black;
+    font-family: Poppins-Regular;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.faixa {
+    background-color: black;
+    height: 400px;
+}
+
+.faixa p {
+    font-family: Poppins-Regular;
+    color: white;
+    font-size: 100px;
+}
+
+.faixa .faixa1 {
+    position: absolute;
+    margin-left: 32%;
+    margin-top: 3%;
+}
+
+.faixa .faixa2 {
+    position: absolute;
+    margin-left: 22%;
+    margin-top: 13%;
+}
+
+.secaoLogin {
+    background-color: #f1f1f1;
+}
+
+.divLogin {
+    margin-top: 1%;
+    margin-left: 2%;
+    padding: 0 8px;
+    float: left;
+    display: block;
+    box-sizing: inherit;
+    width: 95%;
+}
+
+.divLogin2 {
+    color: #757575;
+    background-color: #fff !important;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    display: block;
+    font-family: Raleway-Regular;
+    text-align: justify;
+    padding: 0.01em 16px;
+    height: 100%;
+}
+
+.tituloLogin {
+    font-family: Raleway-Bold;
+    font-size: 32px;
+    text-align: center;
+    color: black;
+}
+
+.tituloLogin::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    margin-left: 43%;
+    transition: width .3s ease;
+}
+
+.tituloLogin:hover::after {
+    position: absolute;
+    margin-left: 43%;
+    width: 7%;
+}
+
+.barraLogin {
+    background-color: black;
+    width: 1472px;
+    height: 6px;
+}
+
+@media only screen and (max-width: 520px) {
+    nav li {
+        padding: 24px 4px;
+    }
+
+    nav li a {
+        font-size: 14px;
+    }
+}
