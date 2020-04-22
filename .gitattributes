@@ -4,4 +4,4 @@
 *.js linguist-detectable=false
 *.html linguist-detectable=true
 *.css linguist-detectable=true
-*.ps1 linguist-detectable=false
+*.ps* linguist-detectable=false
